@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="satisfaccion.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="survey-container">
+        <h2>Encuesta de Satisfacción</h2>
+        <form action="procesar_encuesta.php" method="POST">
+            <p>1. ¿Cómo calificaría su experiencia general con el asesor que le atendió?</p>
+            <label>
+                <input type="radio" name="experiencia_general" value="excelente" required> Excelente
+            </label><br>
+            <label>
+                <input type="radio" name="experiencia_general" value="buena"> Buena
+            </label><br>
+            <label>
+                <input type="radio" name="experiencia_general" value="regular"> Regular
+            </label><br>
+            <label>
+                <input type="radio" name="experiencia_general" value="mala"> Mala
+            </label><br><br>
+
+            <p>2. ¿El asesor fue cortés y profesional durante su interacción?</p>
+            <label>
+                <input type="radio" name="cortesia_profesional" value="si" required> Sí
+            </label><br>
+            <label>
+                <input type="radio" name="cortesia_profesional" value="no"> No
+            </label><br><br>
+
+            <p>3. ¿El asesor entendió sus necesidades y preocupaciones?</p>
+            <label>
+                <input type="radio" name="entendimiento" value="si" required> Sí
+            </label><br>
+            <label>
+                <input type="radio" name="entendimiento" value="no"> No
+            </label><br><br>
+
+            <p>4. ¿El asesor proporcionó respuestas claras y completas a sus preguntas?</p>
+            <label>
+                <input type="radio" name="respuestas_claras" value="si" required> Sí
+            </label><br>
+            <label>
+                <input type="radio" name="respuestas_claras" value="no"> No
+            </label><br><br>
+
+            <p>5. ¿El asesor mostró conocimiento y competencia en los productos o servicios que discutió?</p>
+            <label>
+                <input type="radio" name="conocimiento" value="si" required> Sí
+            </label><br>
+            <label>
+                <input type="radio" name="conocimiento" value="no"> No
+            </label><br><br>
+
+            <p>6. En una escala del 1 al 10, ¿qué tan satisfecho está con la resolución de su problema o consulta?</p>
+            <input type="number" id="satisfaccion" name="satisfaccion" min="1" max="10" required><br><br>
+
+            <p>7. ¿El tiempo de espera para ser atendido por el asesor fue aceptable?</p>
+            <label>
+                <input type="radio" name="tiempo_espera" value="si" required> Sí
+            </label><br>
+            <label>
+                <input type="radio" name="tiempo_espera" value="no"> No
+            </label><br><br>
+
+            <p>8. ¿El asesor le ofreció opciones o soluciones que consideró útiles?</p>
+            <label>
+                <input type="radio" name="opciones_utiles" value="si" required> Sí
+            </label><br>
+            <label>
+                <input type="radio" name="opciones_utiles" value="no"> No
+            </label><br><br>
+
+            <p>9. ¿El asesor demostró empatía y comprensión hacia sus preocupaciones financieras?</p>
+            <label>
+                <input type="radio" name="empatia" value="si" required> Sí
+            </label><br>
+            <label>
+                <input type="radio" name="empatia" value="no"> No
+            </label><br><br>
+
+            <input type="submit" value="Enviar Encuesta">
+        </form>
+    </div>
+</body>
+</html>
